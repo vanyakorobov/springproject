@@ -2,7 +2,7 @@ package ru.korobov.springproject.service;
 
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
-import ru.korobov.springproject.UserDao.UserDao;
+import ru.korobov.springproject.dao.UserDao;
 import ru.korobov.springproject.model.User;
 
 import java.util.List;
@@ -35,13 +35,11 @@ public class UserServiceImpl implements UserService {
         userDao.deleteUser(id);
     }
 
-    @Transactional
     @Override
     public User getUserById(Long id) {
         return userDao.getUserById(id);
     }
 
-    @Transactional
     @Override
     public List<User> getAllUsers() {
         return userDao.getAllUsers();

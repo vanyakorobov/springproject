@@ -1,4 +1,4 @@
-package ru.korobov.springproject.UserDao;
+package ru.korobov.springproject.dao;
 
 import jakarta.persistence.EntityManager;
 import jakarta.persistence.PersistenceContext;

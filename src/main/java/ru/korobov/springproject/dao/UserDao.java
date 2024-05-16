@@ -1,4 +1,4 @@
-package ru.korobov.springproject.UserDao;
+package ru.korobov.springproject.dao;
 
 
 import ru.korobov.springproject.model.User;
